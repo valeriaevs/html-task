@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практическое задание по HTML</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: lightgrey;
+    }
+    .container {
+      max-width: 900px;
+      padding: 20px 100px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    h1 {
+      text-align: center;
+      margin: 35px 0;
+    }
+    h2 {
+      text-align: center;
+      margin: 30px 0;
+    }
+    h3 {
+      margin: 30px 0;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+    }
+    .img-name {
+      color: gray;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    ul, ol {
+      padding-left: 40px;
+      margin: 20px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Практическое задание по HTML</h1>
+    <article>
+      <h2>Отзыв на HTML учебник</h2>
+      <p>В данном учебнике меня, как человека, который собирался стать программистом, искренне удивило количество тегов и атрибутов, которые я вижу
+      впервые. Однако позже, осознав причину данного недоразумения, я решила написать этот отзыв во избежание дальнейшего
+      использования ресурса.</p>
+      <p>Все началось со стилей шрифтов. Тег &lt;font&gt; показался мне подозрительным, поэтому я решила почитать о нем в более
+      надежном источнике. Мои догадки подтвердились:</p>
+      <img src="img/font.jpg" alt="устаревший тег font">
+      <p class="img-name"><i>Описание тега в <a href="http://htmlbook.ru/html/font" target="_blank">htmlbook.ru</a></i></p>
+      <p>Далее текст в учебнике форматировался еще несколькими устаревшими атрибутами, некоторые из которых привожу ниже:</p>
+      <ul>
+        <li>атрибут text</li>
+        <li>атрибут bgcolor</li>
+        <li>тег &lt;center&gt;</li>
+      </ul>
+      <p>У того самого надежного источника одно мнение на этот счет, дублировать не буду, привожу пример:</p>
+      <img src="img/text.jpg" alt="невалидный код">
+      <p class="img-name"><i>Описание в <a href="http://htmlbook.ru/html/body/text" target="_blank">htmlbook.ru</a></i></p>
+      <p>Еще один пример невалидного кода в учебнике: несмотря на то что теги современные, такое их использование не
+      допускается:</p>
+      <img src="img/ul.jpg" alt="некорректное использование тега">
+      <p class="img-name"><i>Некорректное использование тега &lt;ul&gt; в учебнике</i></p>
+      <img src="img/w3c.jpg" alt="сообщение валидатора">
+      <p class="img-name"><i>Результат проверки кода <a href="https://validator.w3.org/" target="_blank">W3C валидатором</a></i></p>
+      <p>Я бы могла упомянуть еще много устаревшего кода и технологий, но будет ли смысл? Об уникальности учебника лучше скажут данные примечания:</p>
+      <img src="img/netscape.jpg" alt="netscape">
+      <p class="img-name"><i>Упоминание Netscape Navigator в учебнике</i></p>
+      <p>Про Netscape Navigator рассказывала в университете в рамках темы "История развития сети Интернет". Браузер умер в
+      2007-м.</p>
+      <h3>Последствия изучение устаревших тегов и атрибутов</h3>
+      <p>Конкретно для сеошников могу выделить следующие два пункта:</p>
+      <ol>
+        <li>Относительно бесполезная трата времени;</li>
+        <li>Риск получения невалидного кода при редактировании текста на сайте.</li>
+      </ol>
+      <h3>Влияние невалидного кода на ранжирование сайта</h3>
+      <p>Заинтересовалась данным вопросом, нашла вот такой ответ: "Google не учитывает валидность разметки при оценке сайта. Тем не менее HTML с ошибками в некоторых случаях может
+      помешать GoogleBot оценить уровень мобильной оптимизации ресурса. К тому же такой невалидный код может привести к
+      некорректному выводу страниц сайта в браузере."</p>
+      <p>Источник: <a href="https://webformyself.com/dzhon-myuller-o-vliyanii-nevalidnogo-html-na-ranzhirovanie-sajta/" target="_blank">Джон Мюллер о влиянии невалидного HTML на ранжирование сайта</a></p>
+      <p>Грубо говоря, сайт мы устаревшими тегами не похороним, но программистов возможно разозлим ;)</p>
+    </article>
+    <hr>
+    <article>
+      <h2>Альтернативы</h2>
+      <p>Подготовила списки хороших обучалок, которые в огромном количестве представлены в открытом доступе.</p>
+      <h3>Базовый HTML (и не только):</h3>
+      <ol>
+        <li><a href="https://code-basics.com/ru/languages/html" target="_blank">HTML для начинающих от Code Basics</a> - мой фаворит! Интерактивный курс, где к каждой главе есть небольшое практическое задание, которое выполняется во встроенном редакторе;</li>
+        <li><a href="https://code-basics.com/ru/languages/css" target="_blank">CSS для начинающих от Code Basics</a> - такой же курс по CSS для понимания работы стилей.</li>
+      </ol>
+      <h3>Углубленный HTML/CSS:</h3>
+      <p>Для тех, кто увлекся изучением вестки:</p>
+      <ol>
+        <li><a href="https://ru.hexlet.io/courses/layout-designer-basics" target="_blank">Основы современной верстки от Hexlet</a> - продолжаю настоятельно рекомендовать интерактивный формат;</li>
+        <li><a href="https://flexboxfroggy.com/#ru" target="_blank">Flexbox Froggy</a> - потрясающая вещь, позволит полноценно изучить и освоить
+          технологию flexbox в игровом формате, прохождение займет около часа. У автора есть подобная игрушка и по grid, но сам по
+          себе grid является более сложной технологией, без подробных гайдов не обойтись.</li>
+      </ol>
+      <h3>Альтернативы альтернативам:</h3>
+      <p>Что еще интересненького есть?</p>
+      <ul>
+        <li><a href="https://htmlacademy.ru/courses/basic-html-css" target="_blank">Знакомство с HTML и CSS от HTML Academy</a>;</li>
+        <li><a href="https://www.codecademy.com/catalog/language/html-css" target="_blank">Codecademy - HTML & CSS (English)</a>;</li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3C School Tutorials (English)</a>.</li>
+      </ul>
+      <p>На этом всё, спасибо за внимание!</p>
+    </article>
+  </div>
+</body>
+</html>
